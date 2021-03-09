@@ -1,11 +1,15 @@
 <template>
   <Layout>
+    <g-link to="/">Back to reviews</g-link>
     <article>
       <header>
         <h1>{{ $page.review.title }}</h1>
-        <time :datetime="$page.review.date">
-          {{ $page.review.date }}
-        </time>
+        <div>
+          <span>Reviewed on:</span>
+          <time :datetime="$page.review.date">
+            {{ $page.review.date }}
+          </time>
+        </div>
       </header>
       <div>
         <client-only>
