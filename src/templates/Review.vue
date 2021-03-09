@@ -8,7 +8,9 @@
         </time>
       </header>
       <div>
-        <star-rating v-model="stars" :increment="0.5" :read-only="true" />
+        <client-only>
+          <star-rating v-model="stars" :increment="0.5" :read-only="true" />
+        </client-only>
       </div>
       <div v-html="$page.review.content" />
     </article>
@@ -27,8 +29,6 @@ query Review($path: String!) {
 </page-query>
 
 <script>
-import StarRating from 'vue-star-rating'
-
 export default {
   data() {
     return {
@@ -36,7 +36,7 @@ export default {
     }
   },
   components: {
-    StarRating,
+    StarRating: () => import('vue-star-rating'),
   },
   mounted() {
     this.stars = this.$page.review.stars
