@@ -34,6 +34,11 @@ query Review($path: String!) {
 
 <script>
 export default {
+  metaInfo() {
+    return {
+      title: this.$page.review.title,
+    }
+  },
   data() {
     return {
       stars: 0,
@@ -44,6 +49,14 @@ export default {
   },
   mounted() {
     this.stars = this.$page.review.stars
+  },
+  methods: {
+    track() {
+      this.$gtag.pageview({
+        page_title: this.$page.review.title,
+        page_path: `/${this.$page.review.path}`,
+      })
+    },
   },
 }
 </script>

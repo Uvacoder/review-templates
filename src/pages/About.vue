@@ -10,5 +10,13 @@ export default {
   metaInfo: {
     title: 'About',
   },
+  methods: {
+    track() {
+      this.$gtag.pageview({
+        page_title: 'About',
+        page_path: '/about/',
+      })
+    },
+  },
 }
 </script>

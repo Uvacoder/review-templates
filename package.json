@@ -7,11 +7,11 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@gridsome/plugin-google-analytics": "^0.1.2",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.0",
     "stars-rating-component-vue": "^1.2.0",
+    "vue-gtag": "^1.11.0",
     "vue-star-rating": "^1.7.0"
   }
 }

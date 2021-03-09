@@ -30,5 +30,13 @@ export default {
   metaInfo: {
     title: 'Marks Reviews',
   },
+  methods: {
+    track() {
+      this.$gtag.pageview({
+        page_title: 'Home',
+        page_path: '/',
+      })
+    },
+  },
 }
 </script>

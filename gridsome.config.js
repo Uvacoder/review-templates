@@ -10,11 +10,5 @@ module.exports = {
         route: '/:path',
       },
     },
-    {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'G-T6132Z1GPP',
-      },
-    },
   ],
 }
