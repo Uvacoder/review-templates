@@ -1,7 +1,9 @@
 <template>
   <Layout>
-    <h1>About</h1>
-    <p>I review stuff here.</p>
+    <div class="prose prose-xl">
+      <h1>About</h1>
+      <p>I review stuff here.</p>
+    </div>
   </Layout>
 </template>
 

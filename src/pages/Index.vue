@@ -1,27 +1,29 @@
 <template>
   <Layout>
-    <h1>Welcome to Marks Reviews</h1>
-    <p>Enjoy a collection of reviews about things in my life.</p>
-    <ul>
-      <li v-for="review in $page.reviews.edges" :key="review.node.id">
-        <g-link :to="review.node.path">
-          {{ review.node.title }}
-        </g-link>
-      </li>
-    </ul>
+    <div class="prose">
+      <h1>My Reviews</h1>
+
+      <ul>
+        <li v-for="review in $page.reviews.edges" :key="review.node.id">
+          <g-link :to="review.node.path">
+            {{ review.node.title }}
+          </g-link>
+        </li>
+      </ul>
+    </div>
   </Layout>
 </template>
 
 <page-query>
-  query { 
-    reviews: allReview(sortBy: "title", order: ASC) { 
-      edges { 
-        node { 
-          title 
+  query {
+    reviews: allReview(sortBy: "title", order: ASC) {
+      edges {
+        node {
+          title
           path
-        } 
-      } 
-    } 
+        }
+      }
+    }
   }
 </page-query>
 

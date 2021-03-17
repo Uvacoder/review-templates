@@ -1,23 +1,29 @@
 <template>
   <Layout>
-    <g-link to="/">Back to reviews</g-link>
-    <article>
-      <header>
-        <h1>{{ $page.review.title }}</h1>
-        <div>
-          <span>Reviewed on:</span>
-          <time :datetime="$page.review.date">
-            {{ $page.review.date }}
-          </time>
+    <div class="prose">
+      <g-link to="/">Back to reviews</g-link>
+
+      <article class="mt-4">
+        <header>
+          <h1>{{ $page.review.title }}</h1>
+
+          <div>
+            <span>Reviewed on:</span>
+            <time :datetime="$page.review.date">
+              {{ $page.review.date }}
+            </time>
+          </div>
+        </header>
+
+        <div class="my-6">
+          <client-only>
+            <star-rating v-model="stars" :increment="0.5" :read-only="true" />
+          </client-only>
         </div>
-      </header>
-      <div>
-        <client-only>
-          <star-rating v-model="stars" :increment="0.5" :read-only="true" />
-        </client-only>
-      </div>
-      <div v-html="$page.review.content" />
-    </article>
+
+        <div v-html="$page.review.content" />
+      </article>
+    </div>
   </Layout>
 </template>
 
@@ -60,15 +66,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-article > * + * {
-  margin-top: 20px;
-}
-
-article header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-</style>
