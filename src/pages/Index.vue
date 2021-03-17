@@ -1,7 +1,13 @@
 <template>
   <Layout>
-    <div class="prose">
-      <h1>My Reviews</h1>
+    <div class="prose max-w-none">
+      <h1>No Faff Reviews</h1>
+
+      <p>
+        Hello I am Mark and here are <strong>5</strong> of my latest reviews, you can see all
+        <strong>{{ $page.count.totalCount }}</strong> reviews on the main
+        <g-link to="/reviews/">reviews page</g-link>.
+      </p>
 
       <ul>
         <li v-for="review in $page.reviews.edges" :key="review.node.id">
@@ -10,19 +16,24 @@
           </g-link>
         </li>
       </ul>
+
+      <g-link to="/reviews/">View all reviews</g-link>
     </div>
   </Layout>
 </template>
 
 <page-query>
   query {
-    reviews: allReview(sortBy: "title", order: ASC) {
+    reviews: allReview(limit: 5, sortBy: "title", order: ASC) {
       edges {
         node {
           title
           path
         }
       }
+    }
+    count: allReview {
+      totalCount
     }
   }
 </page-query>

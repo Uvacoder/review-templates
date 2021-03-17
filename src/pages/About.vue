@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="prose prose-xl">
+    <div class="prose max-w-none">
       <h1>About</h1>
       <p>I review stuff here.</p>
     </div>

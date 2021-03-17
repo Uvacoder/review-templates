@@ -1,12 +1,21 @@
 <template>
-  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-    <header class="py-6 border-b-2 border-gray-500">
-      <p class="text-2xl text-center">
+  <div class="max-w-3xl px-4 py-12 mx-auto space-y-8 sm:px-6 lg:px-8">
+    <header class="space-y-4 text-center">
+      <g-link to="/" class="text-2xl font-bold text-center uppercase">
         Welcome to Marks Reviews
-      </p>
+      </g-link>
+
+      <nav class="space-x-4">
+        <g-link to="/about/" class="underline">About</g-link>
+        <g-link to="/reviews/" class="underline">Reviews</g-link>
+      </nav>
     </header>
 
-    <main class="py-12">
+    <marquee class="py-2 text-sm uppercase bg-pink-500">
+      New reviews added every week, check back often to see the latest Marks Reviews
+    </marquee>
+
+    <main>
       <slot />
     </main>
   </div>

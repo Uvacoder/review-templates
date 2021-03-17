@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Comic Sans MS', 'Comic Sans', ...defaultTheme.fontFamily.sans]
-      }
+      },
     },
   },
   variants: {
