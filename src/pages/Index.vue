@@ -10,7 +10,7 @@
       </p>
 
       <ul>
-        <li v-for="review in $page.reviews.edges" :key="review.node.id">
+        <li v-for="(review, index) in $page.reviews.edges" :key="review.node.id" :class="{ new: index === 0 }">
           <g-link :to="review.node.path">
             {{ review.node.title }}
           </g-link>
@@ -24,7 +24,7 @@
 
 <page-query>
   query {
-    reviews: allReview(limit: 5, sortBy: "title", order: ASC) {
+    reviews: allReview(limit: 5, sortBy: "date", order: DESC) {
       edges {
         node {
           title
