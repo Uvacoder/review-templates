@@ -6,6 +6,7 @@
       </g-link>
 
       <nav class="space-x-4">
+        <g-link to="/" class="underline">Home</g-link>
         <g-link to="/about/" class="underline">About</g-link>
         <g-link to="/reviews/" class="underline">Reviews</g-link>
       </nav>
