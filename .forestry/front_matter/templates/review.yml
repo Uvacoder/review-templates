@@ -8,14 +8,10 @@ fields:
     required: false
   label: Title
 - name: date
-  type: datetime
-  label: Date
-  description: ''
+  type: text
   config:
     required: false
-    date_format: 
-    time_format: 
-    display_utc: false
+  label: Date
 - name: path
   type: text
   config:
