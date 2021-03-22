@@ -10,6 +10,15 @@ module.exports = {
         route: '/:path',
       },
     },
+    {
+      use: 'gridsome-plugin-robots',
+      options: {
+        host: 'https://marks.reviews',
+        sitemap: 'https://marks.reviews/sitemap.xml',
+        policy: [ { userAgent: '*', allow: '/' } ]
+      }
+    },
+    { use: '@gridsome/plugin-sitemap' }
   ],
    css: {
     loaderOptions: {
