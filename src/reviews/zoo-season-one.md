@@ -16,5 +16,3 @@ The actors are OK, they're doing the best they can with what they've been given.
 There's a huge missed opportunity here, the plot is an amazing one and in the right hands this could have been incredible.
 
 I will be watching the next season being very comfortable with the idea of not finishing it, an attitude I have picked up from the writers of this terrible show.
-
-![](/uploads/get_started128.png)
