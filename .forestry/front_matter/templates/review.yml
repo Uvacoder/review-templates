@@ -1,4 +1,45 @@
 ---
 label: Review
 hide_body: false
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: 
+    time_format: 
+    display_utc: false
+- name: path
+  type: text
+  config:
+    required: false
+  label: Path
+- name: stars
+  type: select
+  default: ''
+  config:
+    required: true
+    options:
+    - '0.5'
+    - '1'
+    - '1.5'
+    - '2'
+    - '2.5'
+    - '3'
+    - '3.5'
+    - '4'
+    - '4.5'
+    - '5'
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Stars
