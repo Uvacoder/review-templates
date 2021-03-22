@@ -18,6 +18,26 @@ module.exports = {
         policy: [ { userAgent: '*', allow: '/' } ]
       }
     },
+    {
+      use: 'gridsome-plugin-rss',
+      options: {
+        contentTypeName: 'Review',
+        feedOptions: {
+          title: 'Marks Reviews',
+          feed_url: 'https://marks.reviews/rss.xml',
+          site_url: 'https://marks.reviews'
+        },
+        feedItemOptions: node => ({
+          title: node.title,
+          url: 'https://marks.reviews' + node.path,
+          date: node.date
+        }),
+        output: {
+          dir: './static',
+          name: 'rss.xml'
+        }
+      }
+    },
     { use: '@gridsome/plugin-sitemap' }
   ],
    css: {
