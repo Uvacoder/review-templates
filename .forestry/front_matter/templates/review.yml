@@ -43,3 +43,5 @@ fields:
       file: 
       path: 
   label: Stars
+pages:
+- src/reviews/morrisons-chocolate-orange-doughnuts.md
