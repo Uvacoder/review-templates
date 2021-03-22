@@ -4,7 +4,7 @@
       <h1>No Faff Reviews</h1>
 
       <p>
-        Hello I am Mark and here are <strong>5</strong> of my latest reviews, you can see all
+        Hello I am Mark and here are <strong>10</strong> of my latest reviews, you can see all
         <strong>{{ $page.count.totalCount }}</strong> reviews on the main
         <g-link to="/reviews/">reviews page</g-link>.
       </p>
@@ -24,7 +24,7 @@
 
 <page-query>
   query {
-    reviews: allReview(limit: 5, sortBy: "date", order: DESC) {
+    reviews: allReview(limit: 10, sortBy: "date", order: DESC) {
       edges {
         node {
           title

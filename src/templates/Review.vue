@@ -62,6 +62,7 @@ export default {
   metaInfo() {
     return {
       title: this.$page.review.title,
+      descrition: `Review of ${this.$page.review.title}, reviewed on ${this.$page.review.date}`
     }
   },
   data() {
