@@ -10,7 +10,7 @@
       </p>
 
       <ul>
-        <li v-for="(review, index) in $page.reviews.edges" :key="review.node.id" :class="{ new: index === 0 }">
+        <li v-for="review in $page.reviews.edges" :key="review.node.id" :class="{ new: isNew(review.node.date) }">
           <g-link :to="review.node.path">
             {{ review.node.title }}
           </g-link>
@@ -29,6 +29,7 @@
         node {
           title
           path
+          date
         }
       }
     }
@@ -50,6 +51,13 @@ export default {
         page_path: '/',
       })
     },
+    isNew(date) {
+      const today = new Date()
+      const lastWeekDay = today.getDate() - 3
+      const todayDay = date.substring(0, 2)
+
+      return lastWeekDay < todayDay ? true : false
+    }
   },
 }
 </script>
