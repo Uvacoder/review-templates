@@ -22,8 +22,8 @@
 
     <footer class="p-2 text-center bg-gray-100">
       <nav class="space-x-4">
-        <g-link to="/rss.xml/" class="underline">RSS</g-link>
-        <g-link to="/sitemap.xml/" class="underline">Sitemap</g-link>
+        <g-link to="/rss.xml" class="underline">RSS</g-link>
+        <g-link to="/sitemap.xml" class="underline">Sitemap</g-link>
       </nav>
     </footer>
   </div>
