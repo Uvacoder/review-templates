@@ -41,6 +41,8 @@ fields:
   label: Stars
 pages:
 - src/reviews/destiny-2.md
+- src/reviews/huel-banana-black-edition.md
+- src/reviews/huel-vanilla-black-edition.md
 - src/reviews/hypercolor.md
 - src/reviews/morrisons-chocolate-orange-doughnuts.md
 - src/reviews/this-website.md
