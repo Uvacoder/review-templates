@@ -13,4 +13,4 @@ There's enough space for a laptop and some lunch, for example; loose salad with 
 
 I would rate this bag slightly higher but I was told it didn't look nice on me because it had "too many colors".
 
-![Front of messenger bag](/images/photo-on-19-03-2021-at-13-25.jpg "Messenger bag")
+![Front of messenger bag](https://res.cloudinary.com/drsrl7tay/image/upload/v1616495072/Photo_on_19-03-2021_at_13.25_eihwpv.jpg "Messenger bag")
