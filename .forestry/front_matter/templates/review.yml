@@ -41,6 +41,7 @@ fields:
   label: Stars
 pages:
 - src/reviews/destiny-2.md
+- src/reviews/hypercolor.md
 - src/reviews/morrisons-chocolate-orange-doughnuts.md
 - src/reviews/this-website.md
 - src/reviews/wanksey-grumpy-bollocks-mug.md
