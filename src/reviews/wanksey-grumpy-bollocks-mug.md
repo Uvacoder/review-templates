@@ -13,4 +13,4 @@ There are no major flaws with this mug, but the thing that bugs me and costs the
 
 You can buy your own Wanksey Grumpy Bollocks Mug on [the Wanksey website](https://wanksey.com/ "Wanksey website"), which some of you may notice looks exactly like every other Shopify website because the owner is a tightass who refuses to use anything other than Debut, the default free theme Shopify provides.
 
-![Front of mug](/uploads/photo-on-22-03-2021-at-12-54.jpg "Front of mug")![Back of mug](/uploads/photo-on-22-03-2021-at-12-54-2.jpg "Back of mug")
+![Front of mug](https://res.cloudinary.com/drsrl7tay/image/upload/v1616495276/Photo_on_22-03-2021_at_12.54_jixsa8.jpg "Grumpy bollocks mug")![Back of mug](https://res.cloudinary.com/drsrl7tay/image/upload/v1616495280/Photo_on_22-03-2021_at_12.54_2_pcs0kv.jpg "Grumpy bollocks mug")
