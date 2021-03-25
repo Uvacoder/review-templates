@@ -13,7 +13,7 @@
             <g-link to="/reviews/" class="font-mono font-bold tracking-widest uppercase"> Reviews </g-link>
           </nav>
 
-          <div class="relative">
+          <div class="relative" v-click-outside="hide">
             <div class="flex items-center justify-center p-8 border-t border-black sm:h-24 sm:border-t-0 sm:border-l">
               <button v-on:click="search = !search" class="font-mono font-bold tracking-widest uppercase">
                 🕵️‍♀️ Search 🕵️
@@ -22,7 +22,6 @@
 
             <div
               v-if="search"
-              v-click-outside="hide"
               class="absolute right-0 top-auto z-10 w-screen max-w-3xl p-8 bg-white border-t border-b border-black sm:border-l sm:border-r"
             >
               <Search />
@@ -64,7 +63,7 @@ export default {
       this.search = !this.search
     },
     hide() {
-      if (this.search) this.search = false
+      this.search = false
     },
   },
 }
