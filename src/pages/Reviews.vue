@@ -51,7 +51,7 @@ import ReviewCard from '@/components/ReviewCard'
 export default {
   metaInfo: {
     title: 'Reviews',
-    description: `Read ${searchReviews.length} no faff reviews`,
+    description: `Read ${this.searchReviews.length} no faff reviews`,
   },
   data() {
     return {
