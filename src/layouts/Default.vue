@@ -22,6 +22,7 @@
 
             <div
               v-if="search"
+              v-click-outside="hide"
               class="absolute right-0 top-auto z-10 w-screen max-w-3xl p-8 bg-white border-t border-b border-black sm:border-l sm:border-r"
             >
               <Search />
@@ -57,6 +58,14 @@ export default {
   },
   components: {
     Search,
+  },
+  methods: {
+    toggle() {
+      this.search = !this.search
+    },
+    hide() {
+      if (this.search) this.search = false
+    },
   },
 }
 </script>
