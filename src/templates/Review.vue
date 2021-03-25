@@ -28,7 +28,7 @@
               <li v-for="review in $page.reviews.edges" :key="review.node.id" class="px-2 py-1">
                 <g-link
                   :to="review.node.path"
-                  class="relative font-mono text-sm font-bold tracking-widest uppercase group"
+                  class="relative block font-mono text-sm font-bold tracking-widest uppercase group"
                 >
                   <span
                     class="absolute inset-0 transition-transform transform bg-yellow-200 -rotate-2 group-hover:scale-y-125 group-hover:scale-x-110"
