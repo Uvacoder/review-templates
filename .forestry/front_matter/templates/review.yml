@@ -10,16 +10,16 @@ fields:
 - name: date
   type: text
   config:
-    required: false
+    required: true
   label: Date
 - name: path
   type: text
   config:
-    required: false
+    required: true
   label: Path
 - name: stars
   type: select
-  default: ''
+  default: '0.5'
   config:
     required: true
     options:
