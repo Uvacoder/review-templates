@@ -2,8 +2,9 @@
   <Layout>
     <header>
       <div class="container py-16">
-        <h1 class="font-extrabold uppercase text-7xl">
-          {{ searchReviews.length }} No faff {{ 'review' | pluralize(searchReviews.length) }}
+        <h1 class="text-6xl font-extrabold uppercase sm:text-7xl">
+          {{ searchReviews.length }} No faff <br />
+          {{ 'review' | pluralize(searchReviews.length) }}
         </h1>
       </div>
     </header>
@@ -23,7 +24,7 @@
       </div>
 
       <div v-else class="container">
-        <h2 class="text-4xl font-extrabold uppercase">
+        <h2 class="text-3xl font-extrabold uppercase sm:text-4xl">
           😢 No results, try again 😢
         </h2>
       </div>
@@ -51,7 +52,7 @@ import ReviewCard from '@/components/ReviewCard'
 export default {
   metaInfo: {
     title: 'Reviews',
-    description: `Read ${this.searchReviews.length} no faff reviews`,
+    description: `Read my collection of no faff reviews`,
   },
   data() {
     return {

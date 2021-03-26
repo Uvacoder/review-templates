@@ -3,7 +3,9 @@
     <article>
       <div class="container pt-16 space-y-12">
         <header class="items-center justify-between lg:flex">
-          <h1 class="font-extrabold uppercase break-words max-w-prose text-7xl">{{ $page.review.title }}</h1>
+          <h1 class="text-6xl font-extrabold uppercase break-words max-w-prose sm:text-7xl">
+            {{ $page.review.title }}
+          </h1>
 
           <div class="mt-4 font-mono font-bold tracking-widest uppercase lg:mt-0">
             <span>Reviewed on:</span>
@@ -72,7 +74,7 @@ export default {
   metaInfo() {
     return {
       title: this.$page.review.title,
-      description: `Review of ${this.$page.review.title}, reviewed on ${this.$page.review.date}`,
+      description: `A review of ${this.$page.review.title}, reviewed on ${this.$page.review.date}`,
     }
   },
   data() {
