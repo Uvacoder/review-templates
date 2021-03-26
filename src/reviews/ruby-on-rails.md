@@ -27,4 +27,4 @@ It was the go-to for startups and has remained one of the best options for start
 
 People see that as a bad thing, they use it as a "Rails must be dead because Airbnb dropped it" but look at what Ruby on Rails did for Airbnb.
 
-I use Ruby on Rails nearly everyday, it's connected a lot of the dots I had about web development when I first started out and I'm sure it will do the same for you, just give it a chance.
+I use Ruby on Rails nearly every day, it's connected a lot of the dots I had about web development when I first started out and I'm sure it will do the same for you, just give it a chance.
