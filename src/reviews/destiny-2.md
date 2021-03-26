@@ -2,9 +2,7 @@
 title: Destiny 2
 date: 22/03/2021
 path: destiny-2
-stars: '5'
+stars: '4'
 
 ---
-I have no clue what's going on.
-
-5/5
+This was a 5 star review, but the servers are awful.
