@@ -52,7 +52,12 @@ import ReviewCard from '@/components/ReviewCard'
 export default {
   metaInfo: {
     title: 'Reviews',
-    description: `Read my collection of no faff reviews`,
+    meta: [
+      {
+        name: 'description',
+        content: 'My full collection of no faff reviews',
+      },
+    ],
   },
   data() {
     return {

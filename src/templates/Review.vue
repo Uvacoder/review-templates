@@ -74,7 +74,12 @@ export default {
   metaInfo() {
     return {
       title: this.$page.review.title,
-      description: `A review of ${this.$page.review.title}, reviewed on ${this.$page.review.date}`,
+      meta: [
+        { property: 'og:title', content: this.$page.review.title },
+        { name: 'description', content: `Review of ${this.$page.review.title}` },
+        { property: 'og:description', content: `Review of ${this.$page.review.title}` },
+        { name: 'author', content: 'Mark' },
+      ],
     }
   },
   data() {

@@ -50,9 +50,22 @@
 import Search from '@/components/Search'
 
 export default {
+  metaInfo() {
+    return {
+      titleTemplate: '%s | Marks Reviews',
+      meta: [
+        { charset: 'utf-8' },
+        { rel: 'canonical', href: this.location },
+        { property: 'og:site_name', content: 'Marks Reviews' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: this.location },
+      ],
+    }
+  },
   data() {
     return {
       search: false,
+      location: '',
     }
   },
   components: {
@@ -65,6 +78,9 @@ export default {
     hide() {
       this.search = false
     },
+  },
+  mounted() {
+    this.location = window.location.href
   },
 }
 </script>

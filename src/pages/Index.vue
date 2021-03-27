@@ -70,7 +70,12 @@ import ReviewCard from '@/components/ReviewCard'
 export default {
   metaInfo: {
     title: 'Marks Reviews',
-    description: 'Read my no faff reviews',
+    meta: [
+      {
+        name: 'description',
+        content: 'Read up on my no faff reviews',
+      },
+    ],
   },
   methods: {
     track() {

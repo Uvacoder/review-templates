@@ -20,7 +20,12 @@
 export default {
   metaInfo: {
     title: 'About',
-    description: 'About my reviews and myself',
+    meta: [
+      {
+        name: 'description',
+        content: 'About my reviews and myself',
+      },
+    ],
   },
   methods: {
     track() {
