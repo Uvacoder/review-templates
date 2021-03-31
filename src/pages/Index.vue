@@ -68,14 +68,36 @@
 import ReviewCard from '@/components/ReviewCard'
 
 export default {
-  metaInfo: {
-    title: 'Marks Reviews',
-    meta: [
-      {
-        name: 'description',
-        content: 'Read up on my no faff reviews',
-      },
-    ],
+  metaInfo() {
+    return {
+      title: this.seoTitle,
+      meta: [
+        { itemprop: 'description', content: this.seoDescripton },
+        { itemprop: 'name', content: this.seoTitle },
+        { name: 'author', content: 'Mark' },
+        { name: 'description', content: this.seoDescripton },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:creator', content: '@itsmarkmead' },
+        { name: 'twitter:description', content: this.seoDescripton },
+        { name: 'twitter:image:src', content: '' },
+        { name: 'twitter:site', content: this.seoUrl },
+        { name: 'twitter:title', content: this.seoTitle },
+        { property: 'og:description', content: this.seoDescripton },
+        { property: 'og:image', content: '' },
+        { property: 'og:site_name', content: 'Marks Reviews' },
+        { property: 'og:title', content: this.seoTitle },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: this.seoUrl },
+        { rel: 'canonical', href: this.seoUrl },
+      ],
+    }
+  },
+  data() {
+    return {
+      seoDescripton: 'Here I write reviews on things, if they help you then great, if not then oh well.',
+      seoTitle: 'No Faff Reviews',
+      seoUrl: 'https://marks.reviews/',
+    }
   },
   methods: {
     track() {
@@ -83,13 +105,6 @@ export default {
         page_title: 'Home',
         page_path: '/',
       })
-    },
-    isNew(date) {
-      const today = new Date()
-      const lastWeekDay = today.getDate() - 3
-      const todayDay = date.substring(0, 2)
-
-      return lastWeekDay < todayDay ? true : false
     },
   },
   components: {

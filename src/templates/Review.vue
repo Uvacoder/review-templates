@@ -73,17 +73,33 @@ query Review($path: String!) {
 export default {
   metaInfo() {
     return {
-      title: this.$page.review.title,
+      title: this.seoTitle,
       meta: [
-        { property: 'og:title', content: this.$page.review.title },
-        { name: 'description', content: `Review of ${this.$page.review.title}` },
-        { property: 'og:description', content: `Review of ${this.$page.review.title}` },
+        { itemprop: 'description', content: this.seoDescripton },
+        { itemprop: 'name', content: this.seoTitle },
         { name: 'author', content: 'Mark' },
+        { name: 'description', content: this.seoDescripton },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:creator', content: '@itsmarkmead' },
+        { name: 'twitter:description', content: this.seoDescripton },
+        { name: 'twitter:image:src', content: '' },
+        { name: 'twitter:site', content: this.seoUrl },
+        { name: 'twitter:title', content: this.seoTitle },
+        { property: 'og:description', content: this.seoDescripton },
+        { property: 'og:image', content: '' },
+        { property: 'og:site_name', content: 'Marks Reviews' },
+        { property: 'og:title', content: this.seoTitle },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: this.seoUrl },
+        { rel: 'canonical', href: this.seoUrl },
       ],
     }
   },
   data() {
     return {
+      seoDescripton: '',
+      seoTitle: '',
+      seoUrl: '',
       stars: 0,
     }
   },
@@ -97,6 +113,13 @@ export default {
         page_path: this.$page.review.path,
       })
     },
+  },
+  mounted() {
+    this.seoDescripton = `Review of ${this.$page.review.title} by Mark. This review was written on ${
+      this.$page.review.date
+    }.`
+    this.seoTitle = `${this.$page.review.title} | Marks Reviews`
+    this.seoUrl = `https://marks.reviews/${this.$page.review.path}`
   },
 }
 </script>
