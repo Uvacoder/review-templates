@@ -52,20 +52,38 @@ import Search from '@/components/Search'
 export default {
   metaInfo() {
     return {
+      title: 'No Faff Reviews',
       titleTemplate: '%s | Marks Reviews',
       meta: [
+        { name: 'description', content: 'Get simple, no faff reviews about a wide variety of things.' },
         { charset: 'utf-8' },
         { rel: 'canonical', href: this.location },
+        { name: 'twitter:card', content: 'summary' },
+        { name: 'twitter:title', content: 'No Faff Reviews | Marks Reviews' },
+        { name: 'twitter:site', content: this.location },
+        { name: 'twitter:description', content: 'Get simple, no faff reviews about a wide variety of things.' },
+        { name: 'twitter:image:src', content: this.logo },
+        { name: 'twitter:creator', content: '@itsmarkmead' },
+        { property: 'og:title', content: 'No Faff Reviews | Marks Reviews' },
         { property: 'og:site_name', content: 'Marks Reviews' },
         { property: 'og:type', content: 'website' },
+        { property: 'og:image', content: this.logo },
+        { property: 'og:description', content: 'Get simple, no faff reviews about a wide variety of things.' },
         { property: 'og:url', content: this.location },
+        { itemprop: 'name', content: 'No Faff Reviews | Marks Reviews' },
+        { itemprop: 'description', content: 'Get simple, no faff reviews about a wide variety of things.' },
+        { itemprop: 'image', content: this.logo },
+        { name: 'robots', content: 'index' },
       ],
     }
   },
   data() {
+    const root = 'https://marks.reviews'
+
     return {
       search: false,
       location: '',
+      logo: `${root}${require('~/assets/star.png')}`,
     }
   },
   components: {
