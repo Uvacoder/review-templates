@@ -41,6 +41,7 @@ fields:
   label: Stars
 pages:
 - src/reviews/baywatch-movie.md
+- src/reviews/beat-the-meat.md
 - src/reviews/destiny-2.md
 - src/reviews/football-manager-2021.md
 - src/reviews/huel-banana-black-edition.md
