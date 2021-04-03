@@ -2,7 +2,8 @@
 title: Simons Messenger Shoulder Bag
 date: 19/03/2021
 path: simons-messenger-shoulder-bag
-stars: "4"
+stars: '4'
+created_at: 2021-03-19T00:00:00Z
 
 ---
 A joyful little bag that gives you a little bounce to your step.
