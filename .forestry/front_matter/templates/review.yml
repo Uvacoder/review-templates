@@ -39,6 +39,16 @@ fields:
       file: 
       path: 
   label: Stars
+- name: created_at
+  type: datetime
+  label: Created At
+  description: ''
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: false
+  default: now
 pages:
 - src/reviews/baywatch-movie.md
 - src/reviews/beat-the-meat.md
