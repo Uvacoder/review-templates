@@ -7,7 +7,7 @@
           v-model="search"
           type="text"
           id="q"
-          class="w-full p-4 border border-black dark:border-white"
+          class="w-full p-4 border border-black dark:border-white dark:bg-black dark:text-white"
           placeholder="Enter your search"
         />
       </div>
