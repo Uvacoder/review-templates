@@ -95,7 +95,7 @@ export default {
   data() {
     return {
       seoDescripton: 'Here I write reviews on things, if they help you then great, if not then oh well.',
-      seoTitle: 'No Faff Reviews',
+      seoTitle: 'Welcome',
       seoUrl: 'https://marks.reviews/',
     }
   },

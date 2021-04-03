@@ -97,9 +97,11 @@ export default {
   },
   data() {
     return {
-      seoDescripton: '',
-      seoTitle: '',
-      seoUrl: '',
+      seoDescripton: `Review of ${this.$page.review.title} by Mark. This review was written on ${
+        this.$page.review.date
+      }.`,
+      seoTitle: `${this.$page.review.title}`,
+      seoUrl: `https://marks.reviews/${this.$page.review.path}`,
       stars: 0,
     }
   },
@@ -113,13 +115,6 @@ export default {
         page_path: this.$page.review.path,
       })
     },
-  },
-  mounted() {
-    this.seoDescripton = `Review of ${this.$page.review.title} by Mark. This review was written on ${
-      this.$page.review.date
-    }.`
-    this.seoTitle = `${this.$page.review.title} | Marks Reviews`
-    this.seoUrl = `https://marks.reviews/${this.$page.review.path}`
   },
 }
 </script>
