@@ -2,9 +2,10 @@
 title: Simons Coffee
 date: 18/03/2021
 path: simons-coffee
-stars: 2.5
----
+stars: '2.5'
+created_at: 2021-03-18T00:00:00Z
 
+---
 This has been hyped up ever since [Simons Tea](/simons-tea/) and it has failed to deliver.
 
 There was no sugar available, so I have taken that into account in this review.
