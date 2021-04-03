@@ -3,6 +3,7 @@ stars: '4.5'
 title: Ruby on Rails
 date: 26/03/2021
 path: ruby-on-rails
+created_at: 2021-03-26T00:00:00Z
 
 ---
 Do you want to write easy to read, clean code that's production ready? Write Ruby on Rails.
