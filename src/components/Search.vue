@@ -7,13 +7,13 @@
           v-model="search"
           type="text"
           id="q"
-          class="w-full p-4 border border-black"
+          class="w-full p-4 border border-black dark:border-white"
           placeholder="Enter your search"
         />
       </div>
       <button
         type="submit"
-        class="relative inline-flex items-center justify-center px-8 py-5 font-mono font-bold leading-none tracking-widest uppercase bg-white border border-black"
+        class="relative inline-flex items-center justify-center px-8 py-5 font-mono font-bold leading-none tracking-widest uppercase bg-white border border-black dark:bg-black dark:border-white"
       >
         Search
       </button>
