@@ -3,6 +3,7 @@ stars: '1.5'
 title: Football Manager 2021
 date: 26/02/2021
 path: football-manager-2021
+created_at: 2021-03-26T00:00:00Z
 
 ---
 I tried it and I can see how it _could_ be enjoyable, but it's not.
