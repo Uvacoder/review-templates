@@ -4,7 +4,7 @@
     class="relative block border border-black group"
   >
     <span
-      class="absolute inset-0 transition-transform transform translate-x-2 translate-y-2 bg-black group-hover:translate-y-0 group-hover:translate-x-0 dark:bg-yellow-100"
+      class="absolute inset-0 transition-transform transform translate-x-2 translate-y-2 bg-black group-hover:translate-y-0 group-hover:translate-x-0 dark:bg-yellow-300"
     />
 
     <div class="relative flex flex-col items-center justify-between h-full p-12 text-center bg-yellow-200">
@@ -21,7 +21,7 @@
       <div
         class="relative inline-flex items-center justify-center mt-12 leading-none border border-black dark:border-yellow-200 group"
       >
-        <span class="absolute inset-0 transform translate-x-2 translate-y-2 bg-black dark:bg-yellow-100" />
+        <span class="absolute inset-0 transform translate-x-2 translate-y-2 bg-black dark:bg-yellow-300" />
         <span class="relative px-8 py-5 font-mono font-bold tracking-widest uppercase bg-white dark:bg-black">
           Read review
         </span>

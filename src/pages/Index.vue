@@ -35,7 +35,7 @@
 
 <page-query>
   query {
-    reviews: allReview(sortBy: "date", order: DESC) {
+    reviews: allReview(sortBy: "date", order: ASC) {
       edges {
         node {
           title
