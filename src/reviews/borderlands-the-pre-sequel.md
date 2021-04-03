@@ -3,6 +3,7 @@ stars: '4'
 title: 'Borderlands: The Pre-Sequel'
 date: 1/04/2021
 path: borderlands-the-pre-sequel
+created_at: 2021-03-31T23:00:00Z
 
 ---
 Gearbox Software and 2K Games got quite a bit of stick on the release of Borderlands: The Pre-Sequel, fans complained about; 
