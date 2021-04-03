@@ -35,12 +35,13 @@
 
 <page-query>
   query {
-    reviews: allReview(sortBy: "date", order: ASC) {
+    reviews: allReview(sortBy: "created_at", order: DESC) {
       edges {
         node {
           title
           path
           date
+          created_at
         }
       }
     }
