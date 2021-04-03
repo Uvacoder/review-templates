@@ -3,6 +3,7 @@ title: Baywatch (Movie)
 date: 25/03/2021
 path: baywatch-movie
 stars: '1.5'
+created_at: 2021-03-25T00:00:00Z
 
 ---
 In this movie you see the Rock try something he hasn't done in a while; be a muscled-up character that uses his strength to scare and lead people.
