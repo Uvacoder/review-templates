@@ -28,18 +28,7 @@
           <div class="flow-root">
             <ul class="flex flex-wrap -mx-2 -my-1 list-none">
               <li v-for="review in $page.reviews.edges" :key="review.node.id" class="px-2 py-1">
-                <g-link
-                  :to="review.node.path"
-                  class="relative block font-mono text-sm font-bold tracking-widest uppercase group"
-                >
-                  <span
-                    class="absolute inset-0 transition-transform transform bg-yellow-200 -rotate-2 group-hover:scale-y-125 group-hover:scale-x-110"
-                  ></span>
-
-                  <span class="relative">
-                    {{ review.node.title }}
-                  </span>
-                </g-link>
+                <ReviewMiniLink :title="review.node.title" :path="review.node.path" />
               </li>
             </ul>
           </div>
@@ -70,43 +59,59 @@ query Review($path: String!) {
 </page-query>
 
 <script>
+import ReviewMiniLink from '@/components/ReviewMiniLink'
+
 export default {
   metaInfo() {
     return {
-      title: this.seoTitle,
+      title: this.$page.review.title,
       meta: [
-        { itemprop: 'description', content: this.seoDescripton },
-        { itemprop: 'name', content: this.seoTitle },
+        {
+          itemprop: 'description',
+          content: `Review of ${this.$page.review.title} by Mark. This review was written on ${
+            this.$page.review.date
+          }.`,
+        },
+        { itemprop: 'name', content: this.$page.review.title },
         { name: 'author', content: 'Mark' },
-        { name: 'description', content: this.seoDescripton },
+        {
+          name: 'description',
+          content: `Review of ${this.$page.review.title} by Mark. This review was written on ${
+            this.$page.review.date
+          }.`,
+        },
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:creator', content: '@itsmarkmead' },
-        { name: 'twitter:description', content: this.seoDescripton },
-        { name: 'twitter:image:src', content: '' },
-        { name: 'twitter:site', content: this.seoUrl },
-        { name: 'twitter:title', content: this.seoTitle },
-        { property: 'og:description', content: this.seoDescripton },
-        { property: 'og:image', content: '' },
+        {
+          name: 'twitter:description',
+          content: `Review of ${this.$page.review.title} by Mark. This review was written on ${
+            this.$page.review.date
+          }.`,
+        },
+        { name: 'twitter:site', content: `https://marks.reviews/${this.$page.review.path}` },
+        { name: 'twitter:title', content: this.$page.review.title },
+        {
+          property: 'og:description',
+          content: `Review of ${this.$page.review.title} by Mark. This review was written on ${
+            this.$page.review.date
+          }.`,
+        },
         { property: 'og:site_name', content: 'Marks Reviews' },
-        { property: 'og:title', content: this.seoTitle },
+        { property: 'og:title', content: this.$page.review.title },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: this.seoUrl },
-        { rel: 'canonical', href: this.seoUrl },
+        { property: 'og:url', content: `https://marks.reviews/${this.$page.review.path}` },
+        { rel: 'canonical', href: `https://marks.reviews/${this.$page.review.path}` },
       ],
     }
   },
   data() {
     return {
-      seoDescripton: `Review of ${this.$page.review.title} by Mark. This review was written on ${
-        this.$page.review.date
-      }.`,
-      seoTitle: `${this.$page.review.title}`,
-      seoUrl: `https://marks.reviews/${this.$page.review.path}`,
       stars: 0,
     }
   },
   components: {
     StarRating: () => import('vue-star-rating'),
+    ReviewMiniLink,
   },
   methods: {
     track() {

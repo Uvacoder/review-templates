@@ -10,7 +10,6 @@
           <nav class="flex items-center justify-center space-x-8 sm:justify-end">
             <g-link to="/" class="font-mono font-bold tracking-widest uppercase"> Home </g-link>
             <g-link to="/about/" class="font-mono font-bold tracking-widest uppercase"> About </g-link>
-            <g-link to="/reviews/" class="font-mono font-bold tracking-widest uppercase"> Reviews </g-link>
           </nav>
 
           <div class="relative" v-click-outside="hide">

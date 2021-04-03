@@ -1,9 +1,15 @@
 <template>
-  <div>
-    <form action="/reviews" class="flex items-center space-x-8">
+  <div class="space-y-4">
+    <div class="flex items-center space-x-8">
       <div class="w-full">
         <label for="q" class="sr-only">Search</label>
-        <input type="text" id="q" name="q" class="w-full p-4 border border-black" placeholder="Enter your search" />
+        <input
+          v-model="search"
+          type="text"
+          id="q"
+          class="w-full p-4 border border-black"
+          placeholder="Enter your search"
+        />
       </div>
       <button
         type="submit"
@@ -11,6 +17,50 @@
       >
         Search
       </button>
-    </form>
+    </div>
+
+    <SearchResults v-if="searchedReviews.length > 0" :reviews="searchedReviews" />
   </div>
 </template>
+
+<static-query>
+  query {
+    reviews: allReview(sortBy: "title", order: ASC) {
+      edges {
+        node {
+          title
+          path
+          date
+        }
+      }
+    }
+  }
+</static-query>
+
+<script>
+import SearchResults from '@/components/SearchResults'
+
+export default {
+  data() {
+    return {
+      search: '',
+      reviews: [],
+    }
+  },
+  computed: {
+    searchedReviews() {
+      if (!this.search) return []
+
+      return this.reviews.filter((review) => {
+        return review.node.title.toLowerCase().includes(this.search.toLowerCase().trim())
+      })
+    },
+  },
+  mounted() {
+    this.reviews = this.$static.reviews.edges
+  },
+  components: {
+    SearchResults,
+  },
+}
+</script>

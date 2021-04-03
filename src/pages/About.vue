@@ -18,6 +18,13 @@
 
 <script>
 export default {
+  data() {
+    return {
+      seoDescripton: 'Hi I am Mark and I have written some reviews on things that I have experience with, enjoy.',
+      seoTitle: 'About',
+      seoUrl: 'https://marks.reviews/about/',
+    }
+  },
   metaInfo() {
     return {
       title: this.seoTitle,
@@ -29,24 +36,15 @@ export default {
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:creator', content: '@itsmarkmead' },
         { name: 'twitter:description', content: this.seoDescripton },
-        { name: 'twitter:image:src', content: '' },
         { name: 'twitter:site', content: this.seoUrl },
         { name: 'twitter:title', content: this.seoTitle },
         { property: 'og:description', content: this.seoDescripton },
-        { property: 'og:image', content: '' },
         { property: 'og:site_name', content: 'Marks Reviews' },
         { property: 'og:title', content: this.seoTitle },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: this.seoUrl },
         { rel: 'canonical', href: this.seoUrl },
       ],
-    }
-  },
-  data() {
-    return {
-      seoDescripton: 'Hi I am Mark and I have written some reviews on things that I have experience with, enjoy.',
-      seoTitle: 'About',
-      seoUrl: 'https://marks.reviews/about/',
     }
   },
   methods: {
