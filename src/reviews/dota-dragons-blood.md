@@ -3,6 +3,7 @@ stars: '5'
 title: 'DOTA: Dragons Blood'
 date: 03/04/2021
 path: dota-dragons-blood
+created_at: 2021-04-03T20:00:00Z
 
 ---
 What the fuck just happened?
