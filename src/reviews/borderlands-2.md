@@ -2,7 +2,7 @@
 title: Borderlands 2
 date: 15/03/2021
 path: borderlands-2
-stars: '0.5'
+stars: '5'
 created_at: 2021-03-15T00:00:44Z
 
 ---
