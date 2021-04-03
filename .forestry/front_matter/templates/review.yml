@@ -50,6 +50,7 @@ fields:
     display_utc: false
   default: now
 pages:
+- src/reviews/2012.md
 - src/reviews/baywatch-movie.md
 - src/reviews/beat-the-meat.md
 - src/reviews/borderlands-2.md
