@@ -1,10 +1,11 @@
 ---
 title: The Office (UK)
-date: 09/03/2021
+date: '09/03/2021'
 path: the-office-uk
-stars: 5
----
+stars: '5'
+created_at: 2021-03-09T00:00:00Z
 
+---
 This is a perfect TV show.
 
 It has the comedy that is the day-to-day life of paper salesmen, but on top of that you have David Brent attempting to be a rockstar, a storyline later expanded on in the Christmas Special and the movie, David Brent: Life on the Road.
