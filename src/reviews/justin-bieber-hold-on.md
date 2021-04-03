@@ -3,6 +3,7 @@ stars: '5'
 title: Justin Bieber - Hold On
 date: 03/04/2021
 path: justin-bieber-hold-on
+created_at: 2021-04-03T21:00:00Z
 
 ---
 Justin Bieber, a man who is most famous for featuring on a song with Ludacris, is back at it again releasing another decent song.
