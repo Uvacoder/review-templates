@@ -3,7 +3,9 @@
     <header>
       <div class="container py-16">
         <div class="space-y-8 max-w-prose">
-          <h1 class="text-6xl font-extrabold uppercase sm:text-7xl">About</h1>
+          <h1 class="text-6xl font-extrabold uppercase sm:text-7xl">
+            About
+          </h1>
 
           <div>
             <p>

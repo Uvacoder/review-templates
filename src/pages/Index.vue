@@ -4,7 +4,7 @@
       <div class="container py-16">
         <div class="space-y-8 max-w-prose">
           <h1 class="text-6xl font-extrabold uppercase sm:text-7xl">
-            No faff <br />
+            No faff <br>
             reviews
           </h1>
 
@@ -23,10 +23,10 @@
       <div class="container grid grid-cols-1 gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
         <ReviewCard
           v-for="review in $page.reviews.edges"
+          :key="review.path"
           :title="review.node.title"
           :path="review.node.path"
           :date="review.node.date"
-          :key="review.path"
         />
       </div>
     </section>
@@ -51,6 +51,9 @@
 import ReviewCard from '@/components/ReviewCard'
 
 export default {
+  components: {
+    ReviewCard,
+  },
   data() {
     return {
       seoDescripton: 'Here I write reviews on things, if they help you then great, if not then oh well.',
@@ -87,9 +90,6 @@ export default {
         page_path: '/',
       })
     },
-  },
-  components: {
-    ReviewCard,
   },
 }
 </script>

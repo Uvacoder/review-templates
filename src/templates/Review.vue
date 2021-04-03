@@ -17,18 +17,35 @@
         </header>
 
         <client-only>
-          <star-rating v-model="$page.review.stars" :increment="0.5" :read-only="true" :show-rating="false" />
+          <star-rating
+            v-model="$page.review.stars"
+            :increment="0.5"
+            :read-only="true"
+            :show-rating="false"
+          />
         </client-only>
 
-        <div class="prose" v-html="$page.review.content"></div>
+        <div
+          class="prose"
+          v-html="$page.review.content"
+        />
 
         <footer class="p-8 space-y-4 border border-black">
-          <p class="font-mono text-lg font-bold tracking-widest uppercase">Read more reviews:</p>
+          <p class="font-mono text-lg font-bold tracking-widest uppercase">
+            Read more reviews:
+          </p>
 
           <div class="flow-root">
             <ul class="flex flex-wrap -mx-2 -my-1 list-none">
-              <li v-for="review in $page.reviews.edges" :key="review.node.id" class="px-2 py-1">
-                <ReviewMiniLink :title="review.node.title" :path="review.node.path" />
+              <li
+                v-for="review in $page.reviews.edges"
+                :key="review.node.id"
+                class="px-2 py-1"
+              >
+                <ReviewMiniLink
+                  :title="review.node.title"
+                  :path="review.node.path"
+                />
               </li>
             </ul>
           </div>
@@ -104,14 +121,14 @@ export default {
       ],
     }
   },
+  components: {
+    StarRating: () => import('vue-star-rating'),
+    ReviewMiniLink,
+  },
   data() {
     return {
       stars: 0,
     }
-  },
-  components: {
-    StarRating: () => import('vue-star-rating'),
-    ReviewMiniLink,
   },
   methods: {
     track() {

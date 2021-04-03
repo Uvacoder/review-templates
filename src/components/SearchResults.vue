@@ -12,11 +12,11 @@
 import ReviewMiniLink from '@/components/ReviewMiniLink'
 
 export default {
-  props: {
-    reviews: Array,
-  },
   components: {
     ReviewMiniLink,
+  },
+  props: {
+    reviews: Array,
   },
 }
 </script>

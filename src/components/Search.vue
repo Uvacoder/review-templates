@@ -2,14 +2,17 @@
   <div class="space-y-4">
     <div class="flex items-center space-x-8">
       <div class="w-full">
-        <label for="q" class="sr-only">Search</label>
+        <label
+          for="q"
+          class="sr-only"
+        >Search</label>
         <input
+          id="q"
           v-model="search"
           type="text"
-          id="q"
           class="w-full p-4 border border-black dark:border-white dark:bg-black dark:text-white"
           placeholder="Enter your search"
-        />
+        >
       </div>
       <button
         type="submit"
@@ -19,7 +22,10 @@
       </button>
     </div>
 
-    <SearchResults v-if="searchedReviews.length > 0" :reviews="searchedReviews" />
+    <SearchResults
+      v-if="searchedReviews.length > 0"
+      :reviews="searchedReviews"
+    />
   </div>
 </template>
 
@@ -41,6 +47,9 @@
 import SearchResults from '@/components/SearchResults'
 
 export default {
+  components: {
+    SearchResults,
+  },
   data() {
     return {
       search: '',
@@ -58,9 +67,6 @@ export default {
   },
   mounted() {
     this.reviews = this.$static.reviews.edges
-  },
-  components: {
-    SearchResults,
   },
 }
 </script>
