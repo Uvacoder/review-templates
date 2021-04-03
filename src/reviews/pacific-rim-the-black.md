@@ -3,6 +3,7 @@ stars: '4'
 title: 'Pacific Rim: The Black'
 date: 1/04/2021
 path: pacific-rim-the-black
+created_at: 2021-03-31T23:00:00Z
 
 ---
 Apparently, this is an "anime", I did not know this so don't start thinking I'm a weeb.
