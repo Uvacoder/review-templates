@@ -2,9 +2,10 @@
 title: Borderlands 2
 date: 15/03/2021
 path: borderlands-2
-stars: 5
----
+stars: '0.5'
+created_at: 2021-03-15T00:00:44Z
 
+---
 There's no definite number of hours I have spent playing this game, if I was to take a guess it would be 2000 to 3000 hours across Xbox 360, PC and the Xbox One.
 
 That sentence alone should be enough of a review, but I can't leave it there.
